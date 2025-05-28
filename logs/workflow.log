@@ -2830,3 +2830,45 @@ TypeError: 'NoneType' object does not support item assignment
 2025-05-28 09:45:04 - workflow - INFO - Workflow: Final response generated: Successfully completed tasks yielded:
 1. 36.0...
 2025-05-28 09:45:04 - workflow - INFO - Workflow invocation completed.
+2025-05-28 20:30:42 - workflow - INFO - Logging configuration initialized
+2025-05-28 20:30:51 - api - INFO - Processing query: calculate 2+2
+ (Task ID: 5b5d7bf6-98d1-40c0-bd47-e67f2a53be2a)
+2025-05-28 20:30:51 - workflow - INFO - Running workflow for query: 'calculate 2+2
+', max_iterations: 3
+2025-05-28 20:30:51 - workflow - INFO - Creating main workflow graph.
+2025-05-28 20:30:51 - agents - INFO - Initializing PlannerAgent with model: llama-3.3-70b-versatile
+2025-05-28 20:30:58 - agents - INFO - ToolAgent initialized with tools: search, calculator
+2025-05-28 20:30:58 - agents - INFO - Initializing ReflectorAgent with model: llama-3.3-70b-versatile
+2025-05-28 20:31:00 - workflow - INFO - Workflow graph compiled.
+2025-05-28 20:31:00 - workflow - INFO - Workflow: Initiating planning for query: 'calculate 2+2
+'
+2025-05-28 20:31:00 - agents - INFO - Generating plan for query: calculate 2+2
+
+2025-05-28 20:31:08 - agents - INFO - Successfully parsed 1 potential tasks from LLM.
+2025-05-28 20:31:08 - agents - INFO - Task 1 validated successfully: {'id': 1, 'description': '2+2', 'tool': 'calculator'}
+2025-05-28 20:31:08 - agents - INFO - Generated 1 valid tasks: [
+  {
+    "id": 1,
+    "description": "2+2",
+    "tool": "calculator"
+  }
+]
+2025-05-28 20:31:08 - workflow - INFO - Workflow: Planning completed. 1 tasks generated.
+2025-05-28 20:31:08 - workflow - INFO - Workflow: Initiating execution of 1 tasks.
+2025-05-28 20:31:08 - workflow - INFO - Workflow: Executing task 1/1: 1
+2025-05-28 20:31:08 - agents - INFO - Executing task: {'id': 1, 'description': '2+2', 'tool': 'calculator'}
+2025-05-28 20:31:08 - agents - INFO - Calculator: Attempting to evaluate expression: '2+2'
+2025-05-28 20:31:08 - agents - INFO - Calculator: Expression '2+2' evaluated to 4.0
+2025-05-28 20:31:08 - agents - INFO - Task 1 (tool: calculator) executed successfully. Result: 4.0...
+2025-05-28 20:31:08 - workflow - INFO - Workflow: Task 1 execution result: completed
+2025-05-28 20:31:08 - workflow - INFO - Workflow: Execution step completed. 1 results obtained.
+2025-05-28 20:31:08 - workflow - INFO - Workflow: Initiating reflection on execution results.
+2025-05-28 20:31:08 - agents - INFO - Reflector: Evaluating task execution results.
+2025-05-28 20:31:10 - agents - INFO - Reflector: Reflection successful. Feedback: The task to calculate 2+2 was executed successfully with the result being 4.0. The original query is fully addressed.
+2025-05-28 20:31:10 - workflow - INFO - Workflow: Reflection completed.
+2025-05-28 20:31:10 - workflow - INFO - Workflow: Iteration 1/3. Making decision to continue or end.
+2025-05-28 20:31:10 - workflow - INFO - Workflow: Reflection indicates completion and success. Ending workflow.
+2025-05-28 20:31:10 - workflow - INFO - Workflow: Generating final response.
+2025-05-28 20:31:10 - workflow - INFO - Workflow: Final response generated: Successfully completed tasks yielded:
+1. 4.0...
+2025-05-28 20:31:10 - workflow - INFO - Workflow invocation completed.
