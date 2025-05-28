@@ -1,0 +1,1539 @@
+2025-05-28 00:02:58 - agents - ERROR - Task 2 specified an unknown tool: 'user_input'. Task data: {'id': 2, 'description': 'Ask user to provide more context or clarify the query', 'tool': 'user_input'}
+Exception: None
+2025-05-28 00:03:00 - agents - ERROR - Task 2 specified an unknown tool: 'user_input'. Task data: {'id': 2, 'description': 'Ask user to provide more context or clarify the query', 'tool': 'user_input'}
+Exception: None
+2025-05-28 00:03:02 - agents - ERROR - Task 2 specified an unknown tool: 'user_input'. Task data: {'id': 2, 'description': 'Ask user to provide more context or clarify the query', 'tool': 'user_input'}
+Exception: None
+2025-05-28 00:03:02 - workflow - ERROR - Workflow: Unexpected error executing task 2: RetryError[<Future at 0x225ab0a49d0 state=finished raised TaskExecutionError>]
+Exception: (<class 'tenacity.RetryError'>, RetryError(<Future at 0x225ab0a49d0 state=finished raised TaskExecutionError>), <traceback object at 0x00000225AAC73200>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 480, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 90, in execute_task
+    raise TaskExecutionError(task_id=str(task_id), error=f"Unknown tool: {tool_name}")
+exceptions.TaskExecutionError: Task 2 failed: Unknown tool: user_input
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\workflow\main_workflow.py", line 61, in execute_step
+    result = tool_agent.execute_task(task)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 338, in wrapped_f
+    return copy(f, *args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 477, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 378, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 421, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x225ab0a49d0 state=finished raised TaskExecutionError>]
+2025-05-28 00:03:17 - agents - ERROR - Task 2 specified an unknown tool: 'user_input'. Task data: {'id': 2, 'description': 'Ask user to provide more context or clarify the query with a specific example', 'tool': 'user_input'}
+Exception: None
+2025-05-28 00:03:19 - agents - ERROR - Task 2 specified an unknown tool: 'user_input'. Task data: {'id': 2, 'description': 'Ask user to provide more context or clarify the query with a specific example', 'tool': 'user_input'}
+Exception: None
+2025-05-28 00:03:21 - agents - ERROR - Task 2 specified an unknown tool: 'user_input'. Task data: {'id': 2, 'description': 'Ask user to provide more context or clarify the query with a specific example', 'tool': 'user_input'}
+Exception: None
+2025-05-28 00:03:21 - workflow - ERROR - Workflow: Unexpected error executing task 2: RetryError[<Future at 0x225ab0a6ed0 state=finished raised TaskExecutionError>]
+Exception: (<class 'tenacity.RetryError'>, RetryError(<Future at 0x225ab0a6ed0 state=finished raised TaskExecutionError>), <traceback object at 0x00000225AAC8CD80>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 480, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 90, in execute_task
+    raise TaskExecutionError(task_id=str(task_id), error=f"Unknown tool: {tool_name}")
+exceptions.TaskExecutionError: Task 2 failed: Unknown tool: user_input
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\workflow\main_workflow.py", line 61, in execute_step
+    result = tool_agent.execute_task(task)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 338, in wrapped_f
+    return copy(f, *args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 477, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 378, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 421, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x225ab0a6ed0 state=finished raised TaskExecutionError>]
+2025-05-28 00:03:21 - agents - ERROR - Task 3 specified an unknown tool: 'database'. Task data: {'id': 3, 'description': 'Provide a list of common greetings in different languages', 'tool': 'database'}
+Exception: None
+2025-05-28 00:03:23 - agents - ERROR - Task 3 specified an unknown tool: 'database'. Task data: {'id': 3, 'description': 'Provide a list of common greetings in different languages', 'tool': 'database'}
+Exception: None
+2025-05-28 00:03:25 - agents - ERROR - Task 3 specified an unknown tool: 'database'. Task data: {'id': 3, 'description': 'Provide a list of common greetings in different languages', 'tool': 'database'}
+Exception: None
+2025-05-28 00:03:25 - workflow - ERROR - Workflow: Unexpected error executing task 3: RetryError[<Future at 0x225ab0bd350 state=finished raised TaskExecutionError>]
+Exception: (<class 'tenacity.RetryError'>, RetryError(<Future at 0x225ab0bd350 state=finished raised TaskExecutionError>), <traceback object at 0x00000225AB0BCD80>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 480, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 90, in execute_task
+    raise TaskExecutionError(task_id=str(task_id), error=f"Unknown tool: {tool_name}")
+exceptions.TaskExecutionError: Task 3 failed: Unknown tool: database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\workflow\main_workflow.py", line 61, in execute_step
+    result = tool_agent.execute_task(task)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 338, in wrapped_f
+    return copy(f, *args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 477, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 378, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 421, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x225ab0bd350 state=finished raised TaskExecutionError>]
+2025-05-28 00:04:00 - agents - ERROR - Task 2 specified an unknown tool: 'user_input'. Task data: {'id': 2, 'description': 'Ask user to provide more context or clarify the query with a specific example, with a retry mechanism in case of failure', 'tool': 'user_input'}
+Exception: None
+2025-05-28 00:04:02 - agents - ERROR - Task 2 specified an unknown tool: 'user_input'. Task data: {'id': 2, 'description': 'Ask user to provide more context or clarify the query with a specific example, with a retry mechanism in case of failure', 'tool': 'user_input'}
+Exception: None
+2025-05-28 00:04:04 - agents - ERROR - Task 2 specified an unknown tool: 'user_input'. Task data: {'id': 2, 'description': 'Ask user to provide more context or clarify the query with a specific example, with a retry mechanism in case of failure', 'tool': 'user_input'}
+Exception: None
+2025-05-28 00:04:04 - workflow - ERROR - Workflow: Unexpected error executing task 2: RetryError[<Future at 0x225ab0b3bd0 state=finished raised TaskExecutionError>]
+Exception: (<class 'tenacity.RetryError'>, RetryError(<Future at 0x225ab0b3bd0 state=finished raised TaskExecutionError>), <traceback object at 0x00000225AB0D56C0>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 480, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 90, in execute_task
+    raise TaskExecutionError(task_id=str(task_id), error=f"Unknown tool: {tool_name}")
+exceptions.TaskExecutionError: Task 2 failed: Unknown tool: user_input
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\workflow\main_workflow.py", line 61, in execute_step
+    result = tool_agent.execute_task(task)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 338, in wrapped_f
+    return copy(f, *args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 477, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 378, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 421, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x225ab0b3bd0 state=finished raised TaskExecutionError>]
+2025-05-28 00:04:04 - agents - ERROR - Task 3 specified an unknown tool: 'database'. Task data: {'id': 3, 'description': 'Provide a list of common greetings in different languages, with error handling to prevent unexpected failures', 'tool': 'database'}
+Exception: None
+2025-05-28 00:04:06 - agents - ERROR - Task 3 specified an unknown tool: 'database'. Task data: {'id': 3, 'description': 'Provide a list of common greetings in different languages, with error handling to prevent unexpected failures', 'tool': 'database'}
+Exception: None
+2025-05-28 00:04:08 - agents - ERROR - Task 3 specified an unknown tool: 'database'. Task data: {'id': 3, 'description': 'Provide a list of common greetings in different languages, with error handling to prevent unexpected failures', 'tool': 'database'}
+Exception: None
+2025-05-28 00:04:08 - workflow - ERROR - Workflow: Unexpected error executing task 3: RetryError[<Future at 0x225ab0d7210 state=finished raised TaskExecutionError>]
+Exception: (<class 'tenacity.RetryError'>, RetryError(<Future at 0x225ab0d7210 state=finished raised TaskExecutionError>), <traceback object at 0x00000225AB0D7180>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 480, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 90, in execute_task
+    raise TaskExecutionError(task_id=str(task_id), error=f"Unknown tool: {tool_name}")
+exceptions.TaskExecutionError: Task 3 failed: Unknown tool: database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\workflow\main_workflow.py", line 61, in execute_step
+    result = tool_agent.execute_task(task)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 338, in wrapped_f
+    return copy(f, *args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 477, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 378, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 421, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x225ab0d7210 state=finished raised TaskExecutionError>]
+2025-05-28 00:04:08 - agents - ERROR - Task 4 specified an unknown tool: 'summarizer'. Task data: {'id': 4, 'description': 'Summarize the key findings from the search results and provide a concise answer to the user', 'tool': 'summarizer'}
+Exception: None
+2025-05-28 00:04:10 - agents - ERROR - Task 4 specified an unknown tool: 'summarizer'. Task data: {'id': 4, 'description': 'Summarize the key findings from the search results and provide a concise answer to the user', 'tool': 'summarizer'}
+Exception: None
+2025-05-28 00:04:12 - agents - ERROR - Task 4 specified an unknown tool: 'summarizer'. Task data: {'id': 4, 'description': 'Summarize the key findings from the search results and provide a concise answer to the user', 'tool': 'summarizer'}
+Exception: None
+2025-05-28 00:04:12 - workflow - ERROR - Workflow: Unexpected error executing task 4: RetryError[<Future at 0x225ab0d7810 state=finished raised TaskExecutionError>]
+Exception: (<class 'tenacity.RetryError'>, RetryError(<Future at 0x225ab0d7810 state=finished raised TaskExecutionError>), <traceback object at 0x00000225AB0D7CC0>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 480, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 90, in execute_task
+    raise TaskExecutionError(task_id=str(task_id), error=f"Unknown tool: {tool_name}")
+exceptions.TaskExecutionError: Task 4 failed: Unknown tool: summarizer
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\workflow\main_workflow.py", line 61, in execute_step
+    result = tool_agent.execute_task(task)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 338, in wrapped_f
+    return copy(f, *args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 477, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 378, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 421, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x225ab0d7810 state=finished raised TaskExecutionError>]
+2025-05-28 00:04:39 - agents - ERROR - Task 2 specified an unknown tool: 'user_input'. Task data: {'id': 2, 'description': 'Ask user to provide more context or clarify the query with a specific example, with improved error handling', 'tool': 'user_input'}
+Exception: None
+2025-05-28 00:04:41 - agents - ERROR - Task 2 specified an unknown tool: 'user_input'. Task data: {'id': 2, 'description': 'Ask user to provide more context or clarify the query with a specific example, with improved error handling', 'tool': 'user_input'}
+Exception: None
+2025-05-28 00:04:43 - agents - ERROR - Task 2 specified an unknown tool: 'user_input'. Task data: {'id': 2, 'description': 'Ask user to provide more context or clarify the query with a specific example, with improved error handling', 'tool': 'user_input'}
+Exception: None
+2025-05-28 00:04:43 - workflow - ERROR - Workflow: Unexpected error executing task 2: RetryError[<Future at 0x225ab0d67d0 state=finished raised TaskExecutionError>]
+Exception: (<class 'tenacity.RetryError'>, RetryError(<Future at 0x225ab0d67d0 state=finished raised TaskExecutionError>), <traceback object at 0x00000225AB0D6940>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 480, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 90, in execute_task
+    raise TaskExecutionError(task_id=str(task_id), error=f"Unknown tool: {tool_name}")
+exceptions.TaskExecutionError: Task 2 failed: Unknown tool: user_input
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\workflow\main_workflow.py", line 61, in execute_step
+    result = tool_agent.execute_task(task)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 338, in wrapped_f
+    return copy(f, *args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 477, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 378, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 421, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x225ab0d67d0 state=finished raised TaskExecutionError>]
+2025-05-28 00:04:43 - agents - ERROR - Task 3 specified an unknown tool: 'database'. Task data: {'id': 3, 'description': 'Provide a list of common greetings in different languages, with enhanced error handling to prevent unexpected failures', 'tool': 'database'}
+Exception: None
+2025-05-28 00:04:45 - agents - ERROR - Task 3 specified an unknown tool: 'database'. Task data: {'id': 3, 'description': 'Provide a list of common greetings in different languages, with enhanced error handling to prevent unexpected failures', 'tool': 'database'}
+Exception: None
+2025-05-28 00:04:47 - agents - ERROR - Task 3 specified an unknown tool: 'database'. Task data: {'id': 3, 'description': 'Provide a list of common greetings in different languages, with enhanced error handling to prevent unexpected failures', 'tool': 'database'}
+Exception: None
+2025-05-28 00:04:47 - workflow - ERROR - Workflow: Unexpected error executing task 3: RetryError[<Future at 0x225ab0d5750 state=finished raised TaskExecutionError>]
+Exception: (<class 'tenacity.RetryError'>, RetryError(<Future at 0x225ab0d5750 state=finished raised TaskExecutionError>), <traceback object at 0x00000225AB0B03C0>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 480, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 90, in execute_task
+    raise TaskExecutionError(task_id=str(task_id), error=f"Unknown tool: {tool_name}")
+exceptions.TaskExecutionError: Task 3 failed: Unknown tool: database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\workflow\main_workflow.py", line 61, in execute_step
+    result = tool_agent.execute_task(task)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 338, in wrapped_f
+    return copy(f, *args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 477, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 378, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 421, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x225ab0d5750 state=finished raised TaskExecutionError>]
+2025-05-28 00:04:47 - agents - ERROR - Task 4 specified an unknown tool: 'summarizer'. Task data: {'id': 4, 'description': 'Summarize the key findings from the search results and provide a concise answer to the user, with improved summarization algorithms', 'tool': 'summarizer'}
+Exception: None
+2025-05-28 00:04:49 - agents - ERROR - Task 4 specified an unknown tool: 'summarizer'. Task data: {'id': 4, 'description': 'Summarize the key findings from the search results and provide a concise answer to the user, with improved summarization algorithms', 'tool': 'summarizer'}
+Exception: None
+2025-05-28 00:04:51 - agents - ERROR - Task 4 specified an unknown tool: 'summarizer'. Task data: {'id': 4, 'description': 'Summarize the key findings from the search results and provide a concise answer to the user, with improved summarization algorithms', 'tool': 'summarizer'}
+Exception: None
+2025-05-28 00:04:51 - workflow - ERROR - Workflow: Unexpected error executing task 4: RetryError[<Future at 0x225ab0b0f50 state=finished raised TaskExecutionError>]
+Exception: (<class 'tenacity.RetryError'>, RetryError(<Future at 0x225ab0b0f50 state=finished raised TaskExecutionError>), <traceback object at 0x00000225AB0B2380>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 480, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 90, in execute_task
+    raise TaskExecutionError(task_id=str(task_id), error=f"Unknown tool: {tool_name}")
+exceptions.TaskExecutionError: Task 4 failed: Unknown tool: summarizer
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\workflow\main_workflow.py", line 61, in execute_step
+    result = tool_agent.execute_task(task)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 338, in wrapped_f
+    return copy(f, *args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 477, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 378, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 421, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x225ab0b0f50 state=finished raised TaskExecutionError>]
+2025-05-28 00:04:51 - agents - ERROR - Task 5 specified an unknown tool: 'example_generator'. Task data: {'id': 5, 'description': "Provide examples of how to use 'hello' in different contexts, such as formal and informal settings", 'tool': 'example_generator'}
+Exception: None
+2025-05-28 00:04:53 - agents - ERROR - Task 5 specified an unknown tool: 'example_generator'. Task data: {'id': 5, 'description': "Provide examples of how to use 'hello' in different contexts, such as formal and informal settings", 'tool': 'example_generator'}
+Exception: None
+2025-05-28 00:04:55 - agents - ERROR - Task 5 specified an unknown tool: 'example_generator'. Task data: {'id': 5, 'description': "Provide examples of how to use 'hello' in different contexts, such as formal and informal settings", 'tool': 'example_generator'}
+Exception: None
+2025-05-28 00:04:55 - workflow - ERROR - Workflow: Unexpected error executing task 5: RetryError[<Future at 0x225ab0b2b10 state=finished raised TaskExecutionError>]
+Exception: (<class 'tenacity.RetryError'>, RetryError(<Future at 0x225ab0b2b10 state=finished raised TaskExecutionError>), <traceback object at 0x00000225AA9DD880>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 480, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 90, in execute_task
+    raise TaskExecutionError(task_id=str(task_id), error=f"Unknown tool: {tool_name}")
+exceptions.TaskExecutionError: Task 5 failed: Unknown tool: example_generator
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\workflow\main_workflow.py", line 61, in execute_step
+    result = tool_agent.execute_task(task)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 338, in wrapped_f
+    return copy(f, *args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 477, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 378, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 421, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x225ab0b2b10 state=finished raised TaskExecutionError>]
+2025-05-28 00:05:21 - agents - ERROR - Task 2 specified an unknown tool: 'user_input'. Task data: {'id': 2, 'description': 'Ask user to provide more context or clarify the query with a specific example, with enhanced error handling and a more specific prompt', 'tool': 'user_input'}
+Exception: None
+2025-05-28 00:05:24 - agents - ERROR - Task 2 specified an unknown tool: 'user_input'. Task data: {'id': 2, 'description': 'Ask user to provide more context or clarify the query with a specific example, with enhanced error handling and a more specific prompt', 'tool': 'user_input'}
+Exception: None
+2025-05-28 00:05:26 - agents - ERROR - Task 2 specified an unknown tool: 'user_input'. Task data: {'id': 2, 'description': 'Ask user to provide more context or clarify the query with a specific example, with enhanced error handling and a more specific prompt', 'tool': 'user_input'}
+Exception: None
+2025-05-28 00:05:26 - workflow - ERROR - Workflow: Unexpected error executing task 2: RetryError[<Future at 0x225ab0bca90 state=finished raised TaskExecutionError>]
+Exception: (<class 'tenacity.RetryError'>, RetryError(<Future at 0x225ab0bca90 state=finished raised TaskExecutionError>), <traceback object at 0x00000225AB0EC680>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 480, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 90, in execute_task
+    raise TaskExecutionError(task_id=str(task_id), error=f"Unknown tool: {tool_name}")
+exceptions.TaskExecutionError: Task 2 failed: Unknown tool: user_input
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\workflow\main_workflow.py", line 61, in execute_step
+    result = tool_agent.execute_task(task)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 338, in wrapped_f
+    return copy(f, *args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 477, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 378, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 421, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x225ab0bca90 state=finished raised TaskExecutionError>]
+2025-05-28 00:05:26 - agents - ERROR - Task 3 specified an unknown tool: 'database'. Task data: {'id': 3, 'description': 'Provide a list of common greetings in different languages, with enhanced error handling to prevent unexpected failures and a more comprehensive list', 'tool': 'database'}
+Exception: None
+2025-05-28 00:05:28 - agents - ERROR - Task 3 specified an unknown tool: 'database'. Task data: {'id': 3, 'description': 'Provide a list of common greetings in different languages, with enhanced error handling to prevent unexpected failures and a more comprehensive list', 'tool': 'database'}
+Exception: None
+2025-05-28 00:08:25 - agents - ERROR - Error during web search for query 'Search for capital of India': HTTPSConnectionPool(host='api.tavily.com', port=443): Max retries exceeded with url: /search (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001D4D27F6790>: Failed to resolve 'api.tavily.com' ([Errno 11001] getaddrinfo failed)"))
+Exception: (<class 'requests.exceptions.ConnectionError'>, ConnectionError(MaxRetryError('HTTPSConnectionPool(host=\'api.tavily.com\', port=443): Max retries exceeded with url: /search (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001D4D27F6790>: Failed to resolve \'api.tavily.com\' ([Errno 11001] getaddrinfo failed)"))')), <traceback object at 0x000001D4D27F69C0>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\AppData\Roaming\uv\python\cpython-3.11.12-windows-x86_64-none\Lib\socket.py", line 974, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\urllib3\connection.py", line 704, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\urllib3\connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x000001D4D27F6790>: Failed to resolve 'api.tavily.com' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.tavily.com', port=443): Max retries exceeded with url: /search (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001D4D27F6790>: Failed to resolve 'api.tavily.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 20, in search
+    results = client.search(query=query, max_results=5)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tavily\tavily.py", line 118, in search
+    response_dict = self._search(query,
+                    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tavily\tavily.py", line 76, in _search
+    response = requests.post(self.base_url + "/search", data=json.dumps(data), headers=self.headers, timeout=timeout, proxies=self.proxies)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.tavily.com', port=443): Max retries exceeded with url: /search (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001D4D27F6790>: Failed to resolve 'api.tavily.com' ([Errno 11001] getaddrinfo failed)"))
+2025-05-28 00:08:25 - agents - ERROR - Error during execution of task 1 (tool: search): Task Search for capital of India failed: Search failed: HTTPSConnectionPool(host='api.tavily.com', port=443): Max retries exceeded with url: /search (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001D4D27F6790>: Failed to resolve 'api.tavily.com' ([Errno 11001] getaddrinfo failed)"))
+Exception: (<class 'exceptions.TaskExecutionError'>, TaskExecutionError('Task Search for capital of India failed: Search failed: HTTPSConnectionPool(host=\'api.tavily.com\', port=443): Max retries exceeded with url: /search (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001D4D27F6790>: Failed to resolve \'api.tavily.com\' ([Errno 11001] getaddrinfo failed)"))'), <traceback object at 0x000001D4D27F42C0>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\AppData\Roaming\uv\python\cpython-3.11.12-windows-x86_64-none\Lib\socket.py", line 974, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\urllib3\connection.py", line 704, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\urllib3\connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x000001D4D27F6790>: Failed to resolve 'api.tavily.com' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.tavily.com', port=443): Max retries exceeded with url: /search (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001D4D27F6790>: Failed to resolve 'api.tavily.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 20, in search
+    results = client.search(query=query, max_results=5)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tavily\tavily.py", line 118, in search
+    response_dict = self._search(query,
+                    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tavily\tavily.py", line 76, in _search
+    response = requests.post(self.base_url + "/search", data=json.dumps(data), headers=self.headers, timeout=timeout, proxies=self.proxies)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.tavily.com', port=443): Max retries exceeded with url: /search (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001D4D27F6790>: Failed to resolve 'api.tavily.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 98, in execute_task
+    result = self.tools[tool_name](description)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\_api\deprecation.py", line 191, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\base.py", line 896, in __call__
+    return self.run(tool_input, callbacks=callbacks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\base.py", line 774, in run
+    raise error_to_raise
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\base.py", line 743, in run
+    response = context.run(self._run, *tool_args, **tool_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\structured.py", line 93, in _run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 28, in search
+    raise TaskExecutionError(task_id=query, error=f"Search failed: {e}")
+exceptions.TaskExecutionError: Task Search for capital of India failed: Search failed: HTTPSConnectionPool(host='api.tavily.com', port=443): Max retries exceeded with url: /search (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001D4D27F6790>: Failed to resolve 'api.tavily.com' ([Errno 11001] getaddrinfo failed)"))
+2025-05-28 00:08:33 - agents - ERROR - Task 1 specified an unknown tool: 'alternative_search'. Task data: {'id': 1, 'description': 'Search for capital of India using alternative search engine', 'tool': 'alternative_search'}
+Exception: None
+2025-05-28 00:08:35 - agents - ERROR - Task 1 specified an unknown tool: 'alternative_search'. Task data: {'id': 1, 'description': 'Search for capital of India using alternative search engine', 'tool': 'alternative_search'}
+Exception: None
+2025-05-28 00:08:37 - agents - ERROR - Task 1 specified an unknown tool: 'alternative_search'. Task data: {'id': 1, 'description': 'Search for capital of India using alternative search engine', 'tool': 'alternative_search'}
+Exception: None
+2025-05-28 00:08:37 - workflow - ERROR - Workflow: Unexpected error executing task 1: RetryError[<Future at 0x1d4d27f6b90 state=finished raised TaskExecutionError>]
+Exception: (<class 'tenacity.RetryError'>, RetryError(<Future at 0x1d4d27f6b90 state=finished raised TaskExecutionError>), <traceback object at 0x000001D4D2816D80>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 480, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 90, in execute_task
+    raise TaskExecutionError(task_id=str(task_id), error=f"Unknown tool: {tool_name}")
+exceptions.TaskExecutionError: Task 1 failed: Unknown tool: alternative_search
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\workflow\main_workflow.py", line 61, in execute_step
+    result = tool_agent.execute_task(task)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 338, in wrapped_f
+    return copy(f, *args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 477, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 378, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 421, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x1d4d27f6b90 state=finished raised TaskExecutionError>]
+2025-05-28 00:08:38 - agents - ERROR - Task 1 specified an unknown tool: 'alternative_search'. Task data: {'id': 1, 'description': 'Search for capital of India using alternative search engine with retry mechanism', 'tool': 'alternative_search', 'retry_count': 3}
+Exception: None
+2025-05-28 00:08:40 - agents - ERROR - Task 1 specified an unknown tool: 'alternative_search'. Task data: {'id': 1, 'description': 'Search for capital of India using alternative search engine with retry mechanism', 'tool': 'alternative_search', 'retry_count': 3}
+Exception: None
+2025-05-28 00:08:42 - agents - ERROR - Task 1 specified an unknown tool: 'alternative_search'. Task data: {'id': 1, 'description': 'Search for capital of India using alternative search engine with retry mechanism', 'tool': 'alternative_search', 'retry_count': 3}
+Exception: None
+2025-05-28 00:08:42 - workflow - ERROR - Workflow: Unexpected error executing task 1: RetryError[<Future at 0x1d4d38b4710 state=finished raised TaskExecutionError>]
+Exception: (<class 'tenacity.RetryError'>, RetryError(<Future at 0x1d4d38b4710 state=finished raised TaskExecutionError>), <traceback object at 0x000001D4D38B4A40>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 480, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 90, in execute_task
+    raise TaskExecutionError(task_id=str(task_id), error=f"Unknown tool: {tool_name}")
+exceptions.TaskExecutionError: Task 1 failed: Unknown tool: alternative_search
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\workflow\main_workflow.py", line 61, in execute_step
+    result = tool_agent.execute_task(task)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 338, in wrapped_f
+    return copy(f, *args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 477, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 378, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 421, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x1d4d38b4710 state=finished raised TaskExecutionError>]
+2025-05-28 00:08:43 - agents - ERROR - Task 1 specified an unknown tool: 'alternative_search'. Task data: {'id': 1, 'description': 'Search for capital of India with enhanced retry mechanism', 'tool': 'alternative_search', 'retry_count': 5}
+Exception: None
+2025-05-28 00:08:45 - agents - ERROR - Task 1 specified an unknown tool: 'alternative_search'. Task data: {'id': 1, 'description': 'Search for capital of India with enhanced retry mechanism', 'tool': 'alternative_search', 'retry_count': 5}
+Exception: None
+2025-05-28 00:08:47 - agents - ERROR - Task 1 specified an unknown tool: 'alternative_search'. Task data: {'id': 1, 'description': 'Search for capital of India with enhanced retry mechanism', 'tool': 'alternative_search', 'retry_count': 5}
+Exception: None
+2025-05-28 00:08:47 - workflow - ERROR - Workflow: Unexpected error executing task 1: RetryError[<Future at 0x1d4d38b42d0 state=finished raised TaskExecutionError>]
+Exception: (<class 'tenacity.RetryError'>, RetryError(<Future at 0x1d4d38b42d0 state=finished raised TaskExecutionError>), <traceback object at 0x000001D4D38B4640>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 480, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 90, in execute_task
+    raise TaskExecutionError(task_id=str(task_id), error=f"Unknown tool: {tool_name}")
+exceptions.TaskExecutionError: Task 1 failed: Unknown tool: alternative_search
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\workflow\main_workflow.py", line 61, in execute_step
+    result = tool_agent.execute_task(task)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 338, in wrapped_f
+    return copy(f, *args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 477, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 378, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 421, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x1d4d38b42d0 state=finished raised TaskExecutionError>]
+2025-05-28 00:08:47 - agents - ERROR - Task 2 specified an unknown tool: 'mainstream_search'. Task data: {'id': 2, 'description': 'Search for capital of India using a different search engine', 'tool': 'mainstream_search'}
+Exception: None
+2025-05-28 00:08:49 - agents - ERROR - Task 2 specified an unknown tool: 'mainstream_search'. Task data: {'id': 2, 'description': 'Search for capital of India using a different search engine', 'tool': 'mainstream_search'}
+Exception: None
+2025-05-28 00:08:51 - agents - ERROR - Task 2 specified an unknown tool: 'mainstream_search'. Task data: {'id': 2, 'description': 'Search for capital of India using a different search engine', 'tool': 'mainstream_search'}
+Exception: None
+2025-05-28 00:08:51 - workflow - ERROR - Workflow: Unexpected error executing task 2: RetryError[<Future at 0x1d4d38b75d0 state=finished raised TaskExecutionError>]
+Exception: (<class 'tenacity.RetryError'>, RetryError(<Future at 0x1d4d38b75d0 state=finished raised TaskExecutionError>), <traceback object at 0x000001D4D38B4740>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 480, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 90, in execute_task
+    raise TaskExecutionError(task_id=str(task_id), error=f"Unknown tool: {tool_name}")
+exceptions.TaskExecutionError: Task 2 failed: Unknown tool: mainstream_search
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\workflow\main_workflow.py", line 61, in execute_step
+    result = tool_agent.execute_task(task)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 338, in wrapped_f
+    return copy(f, *args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 477, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 378, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 421, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x1d4d38b75d0 state=finished raised TaskExecutionError>]
+2025-05-28 00:09:00 - agents - ERROR - Task 1 specified an unknown tool: 'alternative_search'. Task data: {'id': 1, 'description': 'Search for capital of India with enhanced retry mechanism and increased timeout', 'tool': 'alternative_search', 'retry_count': 3, 'timeout': 30000}
+Exception: None
+2025-05-28 00:09:02 - agents - ERROR - Task 1 specified an unknown tool: 'alternative_search'. Task data: {'id': 1, 'description': 'Search for capital of India with enhanced retry mechanism and increased timeout', 'tool': 'alternative_search', 'retry_count': 3, 'timeout': 30000}
+Exception: None
+2025-05-28 00:09:04 - agents - ERROR - Task 1 specified an unknown tool: 'alternative_search'. Task data: {'id': 1, 'description': 'Search for capital of India with enhanced retry mechanism and increased timeout', 'tool': 'alternative_search', 'retry_count': 3, 'timeout': 30000}
+Exception: None
+2025-05-28 00:09:04 - workflow - ERROR - Workflow: Unexpected error executing task 1: RetryError[<Future at 0x1d4d38b52d0 state=finished raised TaskExecutionError>]
+Exception: (<class 'tenacity.RetryError'>, RetryError(<Future at 0x1d4d38b52d0 state=finished raised TaskExecutionError>), <traceback object at 0x000001D4D38B68C0>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 480, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 90, in execute_task
+    raise TaskExecutionError(task_id=str(task_id), error=f"Unknown tool: {tool_name}")
+exceptions.TaskExecutionError: Task 1 failed: Unknown tool: alternative_search
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\workflow\main_workflow.py", line 61, in execute_step
+    result = tool_agent.execute_task(task)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 338, in wrapped_f
+    return copy(f, *args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 477, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 378, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 421, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x1d4d38b52d0 state=finished raised TaskExecutionError>]
+2025-05-28 00:09:04 - agents - ERROR - Task 3 specified an unknown tool: 'geographic_database'. Task data: {'id': 3, 'description': 'Search for capital of India using a geographic database', 'tool': 'geographic_database'}
+Exception: None
+2025-05-28 00:09:06 - agents - ERROR - Task 3 specified an unknown tool: 'geographic_database'. Task data: {'id': 3, 'description': 'Search for capital of India using a geographic database', 'tool': 'geographic_database'}
+Exception: None
+2025-05-28 00:09:08 - agents - ERROR - Task 3 specified an unknown tool: 'geographic_database'. Task data: {'id': 3, 'description': 'Search for capital of India using a geographic database', 'tool': 'geographic_database'}
+Exception: None
+2025-05-28 00:09:08 - workflow - ERROR - Workflow: Unexpected error executing task 3: RetryError[<Future at 0x1d4d38b5250 state=finished raised TaskExecutionError>]
+Exception: (<class 'tenacity.RetryError'>, RetryError(<Future at 0x1d4d38b5250 state=finished raised TaskExecutionError>), <traceback object at 0x000001D4D2380E40>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 480, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 90, in execute_task
+    raise TaskExecutionError(task_id=str(task_id), error=f"Unknown tool: {tool_name}")
+exceptions.TaskExecutionError: Task 3 failed: Unknown tool: geographic_database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\workflow\main_workflow.py", line 61, in execute_step
+    result = tool_agent.execute_task(task)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 338, in wrapped_f
+    return copy(f, *args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 477, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 378, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 421, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x1d4d38b5250 state=finished raised TaskExecutionError>]
+2025-05-28 00:09:10 - agents - ERROR - Task 1 specified an unknown tool: 'alternative_search'. Task data: {'id': 1, 'description': 'Search for capital of India with enhanced retry mechanism and increased timeout', 'tool': 'alternative_search', 'retry_count': 5, 'timeout': 60000}
+Exception: None
+2025-05-28 00:09:12 - agents - ERROR - Task 1 specified an unknown tool: 'alternative_search'. Task data: {'id': 1, 'description': 'Search for capital of India with enhanced retry mechanism and increased timeout', 'tool': 'alternative_search', 'retry_count': 5, 'timeout': 60000}
+Exception: None
+2025-05-28 00:09:14 - agents - ERROR - Task 1 specified an unknown tool: 'alternative_search'. Task data: {'id': 1, 'description': 'Search for capital of India with enhanced retry mechanism and increased timeout', 'tool': 'alternative_search', 'retry_count': 5, 'timeout': 60000}
+Exception: None
+2025-05-28 00:09:14 - workflow - ERROR - Workflow: Unexpected error executing task 1: RetryError[<Future at 0x1d4d27f7b10 state=finished raised TaskExecutionError>]
+Exception: (<class 'tenacity.RetryError'>, RetryError(<Future at 0x1d4d27f7b10 state=finished raised TaskExecutionError>), <traceback object at 0x000001D4D27F5700>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 480, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 90, in execute_task
+    raise TaskExecutionError(task_id=str(task_id), error=f"Unknown tool: {tool_name}")
+exceptions.TaskExecutionError: Task 1 failed: Unknown tool: alternative_search
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\workflow\main_workflow.py", line 61, in execute_step
+    result = tool_agent.execute_task(task)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 338, in wrapped_f
+    return copy(f, *args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 477, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 378, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 421, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x1d4d27f7b10 state=finished raised TaskExecutionError>]
+2025-05-28 00:09:14 - agents - ERROR - Task 3 specified an unknown tool: 'geographic_database'. Task data: {'id': 3, 'description': 'Search for capital of India using a geographic database', 'tool': 'geographic_database', 'retry_count': 5, 'timeout': 60000}
+Exception: None
+2025-05-28 00:09:16 - agents - ERROR - Task 3 specified an unknown tool: 'geographic_database'. Task data: {'id': 3, 'description': 'Search for capital of India using a geographic database', 'tool': 'geographic_database', 'retry_count': 5, 'timeout': 60000}
+Exception: None
+2025-05-28 00:09:18 - agents - ERROR - Task 3 specified an unknown tool: 'geographic_database'. Task data: {'id': 3, 'description': 'Search for capital of India using a geographic database', 'tool': 'geographic_database', 'retry_count': 5, 'timeout': 60000}
+Exception: None
+2025-05-28 00:09:18 - workflow - ERROR - Workflow: Unexpected error executing task 3: RetryError[<Future at 0x1d4d27f77d0 state=finished raised TaskExecutionError>]
+Exception: (<class 'tenacity.RetryError'>, RetryError(<Future at 0x1d4d27f77d0 state=finished raised TaskExecutionError>), <traceback object at 0x000001D4D2804540>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 480, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 90, in execute_task
+    raise TaskExecutionError(task_id=str(task_id), error=f"Unknown tool: {tool_name}")
+exceptions.TaskExecutionError: Task 3 failed: Unknown tool: geographic_database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\workflow\main_workflow.py", line 61, in execute_step
+    result = tool_agent.execute_task(task)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 338, in wrapped_f
+    return copy(f, *args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 477, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 378, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 421, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x1d4d27f77d0 state=finished raised TaskExecutionError>]
+2025-05-28 00:09:20 - agents - ERROR - Task 1 specified an unknown tool: 'alternative_search'. Task data: {'id': 1, 'description': 'Search for capital of India with enhanced retry mechanism and increased timeout', 'tool': 'alternative_search', 'retry_count': 10, 'timeout': 120000}
+Exception: None
+2025-05-28 00:09:22 - agents - ERROR - Task 1 specified an unknown tool: 'alternative_search'. Task data: {'id': 1, 'description': 'Search for capital of India with enhanced retry mechanism and increased timeout', 'tool': 'alternative_search', 'retry_count': 10, 'timeout': 120000}
+Exception: None
+2025-05-28 00:09:24 - agents - ERROR - Task 1 specified an unknown tool: 'alternative_search'. Task data: {'id': 1, 'description': 'Search for capital of India with enhanced retry mechanism and increased timeout', 'tool': 'alternative_search', 'retry_count': 10, 'timeout': 120000}
+Exception: None
+2025-05-28 00:09:24 - workflow - ERROR - Workflow: Unexpected error executing task 1: RetryError[<Future at 0x1d4d28164d0 state=finished raised TaskExecutionError>]
+Exception: (<class 'tenacity.RetryError'>, RetryError(<Future at 0x1d4d28164d0 state=finished raised TaskExecutionError>), <traceback object at 0x000001D4D38B4440>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 480, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 90, in execute_task
+    raise TaskExecutionError(task_id=str(task_id), error=f"Unknown tool: {tool_name}")
+exceptions.TaskExecutionError: Task 1 failed: Unknown tool: alternative_search
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\workflow\main_workflow.py", line 61, in execute_step
+    result = tool_agent.execute_task(task)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 338, in wrapped_f
+    return copy(f, *args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 477, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 378, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 421, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x1d4d28164d0 state=finished raised TaskExecutionError>]
+2025-05-28 00:09:24 - agents - ERROR - Task 3 specified an unknown tool: 'geographic_database'. Task data: {'id': 3, 'description': 'Search for capital of India using a geographic database', 'tool': 'geographic_database', 'retry_count': 10, 'timeout': 120000}
+Exception: None
+2025-05-28 00:09:26 - agents - ERROR - Task 3 specified an unknown tool: 'geographic_database'. Task data: {'id': 3, 'description': 'Search for capital of India using a geographic database', 'tool': 'geographic_database', 'retry_count': 10, 'timeout': 120000}
+Exception: None
+2025-05-28 00:09:28 - agents - ERROR - Task 3 specified an unknown tool: 'geographic_database'. Task data: {'id': 3, 'description': 'Search for capital of India using a geographic database', 'tool': 'geographic_database', 'retry_count': 10, 'timeout': 120000}
+Exception: None
+2025-05-28 00:09:28 - workflow - ERROR - Workflow: Unexpected error executing task 3: RetryError[<Future at 0x1d4d38b4d10 state=finished raised TaskExecutionError>]
+Exception: (<class 'tenacity.RetryError'>, RetryError(<Future at 0x1d4d38b4d10 state=finished raised TaskExecutionError>), <traceback object at 0x000001D4D38B6640>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 480, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 90, in execute_task
+    raise TaskExecutionError(task_id=str(task_id), error=f"Unknown tool: {tool_name}")
+exceptions.TaskExecutionError: Task 3 failed: Unknown tool: geographic_database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\workflow\main_workflow.py", line 61, in execute_step
+    result = tool_agent.execute_task(task)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 338, in wrapped_f
+    return copy(f, *args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 477, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 378, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 421, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x1d4d38b4d10 state=finished raised TaskExecutionError>]
+2025-05-28 00:09:28 - agents - ERROR - Task 4 specified an unknown tool: 'general_knowledge_database'. Task data: {'id': 4, 'description': 'Search for the capital of India using a general knowledge database', 'tool': 'general_knowledge_database', 'retry_count': 5, 'timeout': 60000}
+Exception: None
+2025-05-28 00:09:30 - agents - ERROR - Task 4 specified an unknown tool: 'general_knowledge_database'. Task data: {'id': 4, 'description': 'Search for the capital of India using a general knowledge database', 'tool': 'general_knowledge_database', 'retry_count': 5, 'timeout': 60000}
+Exception: None
+2025-05-28 00:09:32 - agents - ERROR - Task 4 specified an unknown tool: 'general_knowledge_database'. Task data: {'id': 4, 'description': 'Search for the capital of India using a general knowledge database', 'tool': 'general_knowledge_database', 'retry_count': 5, 'timeout': 60000}
+Exception: None
+2025-05-28 00:09:32 - workflow - ERROR - Workflow: Unexpected error executing task 4: RetryError[<Future at 0x1d4d38b48d0 state=finished raised TaskExecutionError>]
+Exception: (<class 'tenacity.RetryError'>, RetryError(<Future at 0x1d4d38b48d0 state=finished raised TaskExecutionError>), <traceback object at 0x000001D4D38B5D00>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 480, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 90, in execute_task
+    raise TaskExecutionError(task_id=str(task_id), error=f"Unknown tool: {tool_name}")
+exceptions.TaskExecutionError: Task 4 failed: Unknown tool: general_knowledge_database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\workflow\main_workflow.py", line 61, in execute_step
+    result = tool_agent.execute_task(task)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 338, in wrapped_f
+    return copy(f, *args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 477, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 378, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 421, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x1d4d38b48d0 state=finished raised TaskExecutionError>]
+2025-05-28 00:09:34 - agents - ERROR - Task 1 specified an unknown tool: 'alternative_search'. Task data: {'id': 1, 'description': 'Search for capital of India with standard retry mechanism and default timeout', 'tool': 'alternative_search', 'retry_count': 5, 'timeout': 30000}
+Exception: None
+2025-05-28 00:09:36 - agents - ERROR - Task 1 specified an unknown tool: 'alternative_search'. Task data: {'id': 1, 'description': 'Search for capital of India with standard retry mechanism and default timeout', 'tool': 'alternative_search', 'retry_count': 5, 'timeout': 30000}
+Exception: None
+2025-05-28 00:09:38 - agents - ERROR - Task 1 specified an unknown tool: 'alternative_search'. Task data: {'id': 1, 'description': 'Search for capital of India with standard retry mechanism and default timeout', 'tool': 'alternative_search', 'retry_count': 5, 'timeout': 30000}
+Exception: None
+2025-05-28 00:09:38 - workflow - ERROR - Workflow: Unexpected error executing task 1: RetryError[<Future at 0x1d4d38b73d0 state=finished raised TaskExecutionError>]
+Exception: (<class 'tenacity.RetryError'>, RetryError(<Future at 0x1d4d38b73d0 state=finished raised TaskExecutionError>), <traceback object at 0x000001D4D38B7440>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 480, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 90, in execute_task
+    raise TaskExecutionError(task_id=str(task_id), error=f"Unknown tool: {tool_name}")
+exceptions.TaskExecutionError: Task 1 failed: Unknown tool: alternative_search
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\workflow\main_workflow.py", line 61, in execute_step
+    result = tool_agent.execute_task(task)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 338, in wrapped_f
+    return copy(f, *args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 477, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 378, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 421, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x1d4d38b73d0 state=finished raised TaskExecutionError>]
+2025-05-28 00:09:38 - agents - ERROR - Task 3 specified an unknown tool: 'geographic_database'. Task data: {'id': 3, 'description': 'Search for capital of India using a geographic database with standard retry and timeout', 'tool': 'geographic_database', 'retry_count': 5, 'timeout': 30000}
+Exception: None
+2025-05-28 00:09:40 - agents - ERROR - Task 3 specified an unknown tool: 'geographic_database'. Task data: {'id': 3, 'description': 'Search for capital of India using a geographic database with standard retry and timeout', 'tool': 'geographic_database', 'retry_count': 5, 'timeout': 30000}
+Exception: None
+2025-05-28 00:09:42 - agents - ERROR - Task 3 specified an unknown tool: 'geographic_database'. Task data: {'id': 3, 'description': 'Search for capital of India using a geographic database with standard retry and timeout', 'tool': 'geographic_database', 'retry_count': 5, 'timeout': 30000}
+Exception: None
+2025-05-28 00:09:42 - workflow - ERROR - Workflow: Unexpected error executing task 3: RetryError[<Future at 0x1d4d38b5590 state=finished raised TaskExecutionError>]
+Exception: (<class 'tenacity.RetryError'>, RetryError(<Future at 0x1d4d38b5590 state=finished raised TaskExecutionError>), <traceback object at 0x000001D4D38B47C0>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 480, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 90, in execute_task
+    raise TaskExecutionError(task_id=str(task_id), error=f"Unknown tool: {tool_name}")
+exceptions.TaskExecutionError: Task 3 failed: Unknown tool: geographic_database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\workflow\main_workflow.py", line 61, in execute_step
+    result = tool_agent.execute_task(task)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 338, in wrapped_f
+    return copy(f, *args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 477, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 378, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 421, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x1d4d38b5590 state=finished raised TaskExecutionError>]
+2025-05-28 00:09:42 - agents - ERROR - Task 4 specified an unknown tool: 'general_knowledge_database'. Task data: {'id': 4, 'description': 'Search for the capital of India using a general knowledge database with standard retry and timeout', 'tool': 'general_knowledge_database', 'retry_count': 5, 'timeout': 30000}
+Exception: None
+2025-05-28 00:09:44 - agents - ERROR - Task 4 specified an unknown tool: 'general_knowledge_database'. Task data: {'id': 4, 'description': 'Search for the capital of India using a general knowledge database with standard retry and timeout', 'tool': 'general_knowledge_database', 'retry_count': 5, 'timeout': 30000}
+Exception: None
+2025-05-28 00:09:46 - agents - ERROR - Task 4 specified an unknown tool: 'general_knowledge_database'. Task data: {'id': 4, 'description': 'Search for the capital of India using a general knowledge database with standard retry and timeout', 'tool': 'general_knowledge_database', 'retry_count': 5, 'timeout': 30000}
+Exception: None
+2025-05-28 00:09:46 - workflow - ERROR - Workflow: Unexpected error executing task 4: RetryError[<Future at 0x1d4d38b71d0 state=finished raised TaskExecutionError>]
+Exception: (<class 'tenacity.RetryError'>, RetryError(<Future at 0x1d4d38b71d0 state=finished raised TaskExecutionError>), <traceback object at 0x000001D4D38B7400>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 480, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 90, in execute_task
+    raise TaskExecutionError(task_id=str(task_id), error=f"Unknown tool: {tool_name}")
+exceptions.TaskExecutionError: Task 4 failed: Unknown tool: general_knowledge_database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\workflow\main_workflow.py", line 61, in execute_step
+    result = tool_agent.execute_task(task)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 338, in wrapped_f
+    return copy(f, *args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 477, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 378, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 421, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x1d4d38b71d0 state=finished raised TaskExecutionError>]
+2025-05-28 00:09:46 - agents - ERROR - Task 5 specified an unknown tool: 'map_service'. Task data: {'id': 5, 'description': 'Search for capital of India using a map service', 'tool': 'map_service', 'retry_count': 5, 'timeout': 30000}
+Exception: None
+2025-05-28 00:09:48 - agents - ERROR - Task 5 specified an unknown tool: 'map_service'. Task data: {'id': 5, 'description': 'Search for capital of India using a map service', 'tool': 'map_service', 'retry_count': 5, 'timeout': 30000}
+Exception: None
+2025-05-28 00:09:50 - agents - ERROR - Task 5 specified an unknown tool: 'map_service'. Task data: {'id': 5, 'description': 'Search for capital of India using a map service', 'tool': 'map_service', 'retry_count': 5, 'timeout': 30000}
+Exception: None
+2025-05-28 00:09:50 - workflow - ERROR - Workflow: Unexpected error executing task 5: RetryError[<Future at 0x1d4d38b43d0 state=finished raised TaskExecutionError>]
+Exception: (<class 'tenacity.RetryError'>, RetryError(<Future at 0x1d4d38b43d0 state=finished raised TaskExecutionError>), <traceback object at 0x000001D4D38B4440>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 480, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 90, in execute_task
+    raise TaskExecutionError(task_id=str(task_id), error=f"Unknown tool: {tool_name}")
+exceptions.TaskExecutionError: Task 5 failed: Unknown tool: map_service
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\workflow\main_workflow.py", line 61, in execute_step
+    result = tool_agent.execute_task(task)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 338, in wrapped_f
+    return copy(f, *args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 477, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 378, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\tenacity\__init__.py", line 421, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x1d4d38b43d0 state=finished raised TaskExecutionError>]
+2025-05-28 00:09:51 - workflow - ERROR - Unexpected error during workflow run: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+Exception: (<class 'langgraph.errors.GraphRecursionError'>, GraphRecursionError('Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.\nFor troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT'), <traceback object at 0x000001D4D27EAE00>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\workflow\main_workflow.py", line 269, in run_workflow
+    final_state = workflow_graph.invoke(initial_state)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langgraph\pregel\__init__.py", line 2894, in invoke
+    for chunk in self.stream(
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langgraph\pregel\__init__.py", line 2547, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-05-28 09:26:58 - agents - ERROR - Calculator error: Invalid characters found in expression: ['C', 'a', 'c', 'e', 'l', 't', 'u'] in expression 'Calculate 5 + 4444'
+Exception: None
+2025-05-28 09:26:58 - agents - ERROR - Calculator error: Failed to evaluate expression 'Calculate 5 + 4444': Invalid characters found in expression: ['C', 'a', 'c', 'e', 'l', 't', 'u']
+Exception: (<class 'ValueError'>, ValueError("Invalid characters found in expression: ['C', 'a', 'c', 'e', 'l', 't', 'u']"), <traceback object at 0x000001FD06604780>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 42, in calculator
+    raise ValueError(error_msg)
+ValueError: Invalid characters found in expression: ['C', 'a', 'c', 'e', 'l', 't', 'u']
+2025-05-28 09:26:58 - agents - ERROR - Error during execution of task 5 (tool: calculator): Invalid characters found in expression: ['C', 'a', 'c', 'e', 'l', 't', 'u']
+Exception: (<class 'ValueError'>, ValueError("Invalid characters found in expression: ['C', 'a', 'c', 'e', 'l', 't', 'u']"), <traceback object at 0x000001FD067EF380>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 98, in execute_task
+    result = self.tools[tool_name](description)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\_api\deprecation.py", line 191, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\base.py", line 896, in __call__
+    return self.run(tool_input, callbacks=callbacks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\base.py", line 774, in run
+    raise error_to_raise
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\base.py", line 743, in run
+    response = context.run(self._run, *tool_args, **tool_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\structured.py", line 93, in _run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 42, in calculator
+    raise ValueError(error_msg)
+ValueError: Invalid characters found in expression: ['C', 'a', 'c', 'e', 'l', 't', 'u']
+2025-05-28 09:26:58 - agents - ERROR - Calculator error: Invalid characters found in expression: [',', 'S', 'a', 'd', 'e', 'f', 'h', 'k', 'l', 'm', 'n', 'o', 'r', 's', 't', 'u', 'w'] in expression 'Sum the results of tasks 1, 2, 3, and the new task 5'
+Exception: None
+2025-05-28 09:26:58 - agents - ERROR - Calculator error: Failed to evaluate expression 'Sum the results of tasks 1, 2, 3, and the new task 5': Invalid characters found in expression: [',', 'S', 'a', 'd', 'e', 'f', 'h', 'k', 'l', 'm', 'n', 'o', 'r', 's', 't', 'u', 'w']
+Exception: (<class 'ValueError'>, ValueError("Invalid characters found in expression: [',', 'S', 'a', 'd', 'e', 'f', 'h', 'k', 'l', 'm', 'n', 'o', 'r', 's', 't', 'u', 'w']"), <traceback object at 0x000001FD06813BC0>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 42, in calculator
+    raise ValueError(error_msg)
+ValueError: Invalid characters found in expression: [',', 'S', 'a', 'd', 'e', 'f', 'h', 'k', 'l', 'm', 'n', 'o', 'r', 's', 't', 'u', 'w']
+2025-05-28 09:26:58 - agents - ERROR - Error during execution of task 6 (tool: calculator): Invalid characters found in expression: [',', 'S', 'a', 'd', 'e', 'f', 'h', 'k', 'l', 'm', 'n', 'o', 'r', 's', 't', 'u', 'w']
+Exception: (<class 'ValueError'>, ValueError("Invalid characters found in expression: [',', 'S', 'a', 'd', 'e', 'f', 'h', 'k', 'l', 'm', 'n', 'o', 'r', 's', 't', 'u', 'w']"), <traceback object at 0x000001FD06813980>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 98, in execute_task
+    result = self.tools[tool_name](description)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\_api\deprecation.py", line 191, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\base.py", line 896, in __call__
+    return self.run(tool_input, callbacks=callbacks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\base.py", line 774, in run
+    raise error_to_raise
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\base.py", line 743, in run
+    response = context.run(self._run, *tool_args, **tool_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\structured.py", line 93, in _run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 42, in calculator
+    raise ValueError(error_msg)
+ValueError: Invalid characters found in expression: [',', 'S', 'a', 'd', 'e', 'f', 'h', 'k', 'l', 'm', 'n', 'o', 'r', 's', 't', 'u', 'w']
+2025-05-28 09:27:00 - agents - ERROR - Calculator error: Invalid characters found in expression: ['C', 'a', 'c', 'e', 'l', 't', 'u'] in expression 'Calculate 5 + 4444'
+Exception: None
+2025-05-28 09:27:00 - agents - ERROR - Calculator error: Failed to evaluate expression 'Calculate 5 + 4444': Invalid characters found in expression: ['C', 'a', 'c', 'e', 'l', 't', 'u']
+Exception: (<class 'ValueError'>, ValueError("Invalid characters found in expression: ['C', 'a', 'c', 'e', 'l', 't', 'u']"), <traceback object at 0x000001FD0681F900>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 42, in calculator
+    raise ValueError(error_msg)
+ValueError: Invalid characters found in expression: ['C', 'a', 'c', 'e', 'l', 't', 'u']
+2025-05-28 09:27:00 - agents - ERROR - Error during execution of task 5 (tool: calculator): Invalid characters found in expression: ['C', 'a', 'c', 'e', 'l', 't', 'u']
+Exception: (<class 'ValueError'>, ValueError("Invalid characters found in expression: ['C', 'a', 'c', 'e', 'l', 't', 'u']"), <traceback object at 0x000001FD0681F680>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 98, in execute_task
+    result = self.tools[tool_name](description)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\_api\deprecation.py", line 191, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\base.py", line 896, in __call__
+    return self.run(tool_input, callbacks=callbacks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\base.py", line 774, in run
+    raise error_to_raise
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\base.py", line 743, in run
+    response = context.run(self._run, *tool_args, **tool_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\structured.py", line 93, in _run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 42, in calculator
+    raise ValueError(error_msg)
+ValueError: Invalid characters found in expression: ['C', 'a', 'c', 'e', 'l', 't', 'u']
+2025-05-28 09:27:00 - agents - ERROR - Calculator error: Invalid characters found in expression: [',', 'S', 'a', 'd', 'e', 'f', 'h', 'k', 'l', 'm', 'n', 'o', 'r', 's', 't', 'u', 'w'] in expression 'Sum the results of tasks 1, 2, 3, and the new task 5'
+Exception: None
+2025-05-28 09:27:00 - agents - ERROR - Calculator error: Failed to evaluate expression 'Sum the results of tasks 1, 2, 3, and the new task 5': Invalid characters found in expression: [',', 'S', 'a', 'd', 'e', 'f', 'h', 'k', 'l', 'm', 'n', 'o', 'r', 's', 't', 'u', 'w']
+Exception: (<class 'ValueError'>, ValueError("Invalid characters found in expression: [',', 'S', 'a', 'd', 'e', 'f', 'h', 'k', 'l', 'm', 'n', 'o', 'r', 's', 't', 'u', 'w']"), <traceback object at 0x000001FD06828180>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 42, in calculator
+    raise ValueError(error_msg)
+ValueError: Invalid characters found in expression: [',', 'S', 'a', 'd', 'e', 'f', 'h', 'k', 'l', 'm', 'n', 'o', 'r', 's', 't', 'u', 'w']
+2025-05-28 09:27:00 - agents - ERROR - Error during execution of task 6 (tool: calculator): Invalid characters found in expression: [',', 'S', 'a', 'd', 'e', 'f', 'h', 'k', 'l', 'm', 'n', 'o', 'r', 's', 't', 'u', 'w']
+Exception: (<class 'ValueError'>, ValueError("Invalid characters found in expression: [',', 'S', 'a', 'd', 'e', 'f', 'h', 'k', 'l', 'm', 'n', 'o', 'r', 's', 't', 'u', 'w']"), <traceback object at 0x000001FD0681FF00>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 98, in execute_task
+    result = self.tools[tool_name](description)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\_api\deprecation.py", line 191, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\base.py", line 896, in __call__
+    return self.run(tool_input, callbacks=callbacks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\base.py", line 774, in run
+    raise error_to_raise
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\base.py", line 743, in run
+    response = context.run(self._run, *tool_args, **tool_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\structured.py", line 93, in _run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 42, in calculator
+    raise ValueError(error_msg)
+ValueError: Invalid characters found in expression: [',', 'S', 'a', 'd', 'e', 'f', 'h', 'k', 'l', 'm', 'n', 'o', 'r', 's', 't', 'u', 'w']
+2025-05-28 09:27:02 - agents - ERROR - Calculator error: Invalid characters found in expression: ['C', 'a', 'c', 'e', 'l', 't', 'u'] in expression 'Calculate 5 + 4444'
+Exception: None
+2025-05-28 09:27:02 - agents - ERROR - Calculator error: Failed to evaluate expression 'Calculate 5 + 4444': Invalid characters found in expression: ['C', 'a', 'c', 'e', 'l', 't', 'u']
+Exception: (<class 'ValueError'>, ValueError("Invalid characters found in expression: ['C', 'a', 'c', 'e', 'l', 't', 'u']"), <traceback object at 0x000001FD0681F5C0>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 42, in calculator
+    raise ValueError(error_msg)
+ValueError: Invalid characters found in expression: ['C', 'a', 'c', 'e', 'l', 't', 'u']
+2025-05-28 09:27:02 - agents - ERROR - Error during execution of task 5 (tool: calculator): Invalid characters found in expression: ['C', 'a', 'c', 'e', 'l', 't', 'u']
+Exception: (<class 'ValueError'>, ValueError("Invalid characters found in expression: ['C', 'a', 'c', 'e', 'l', 't', 'u']"), <traceback object at 0x000001FD0681C480>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 98, in execute_task
+    result = self.tools[tool_name](description)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\_api\deprecation.py", line 191, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\base.py", line 896, in __call__
+    return self.run(tool_input, callbacks=callbacks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\base.py", line 774, in run
+    raise error_to_raise
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\base.py", line 743, in run
+    response = context.run(self._run, *tool_args, **tool_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\structured.py", line 93, in _run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 42, in calculator
+    raise ValueError(error_msg)
+ValueError: Invalid characters found in expression: ['C', 'a', 'c', 'e', 'l', 't', 'u']
+2025-05-28 09:27:02 - agents - ERROR - Calculator error: Invalid characters found in expression: [',', 'S', 'a', 'd', 'e', 'f', 'h', 'k', 'l', 'm', 'n', 'o', 'r', 's', 't', 'u', 'w'] in expression 'Sum the results of tasks 1, 2, 3, and the new task 5'
+Exception: None
+2025-05-28 09:27:02 - agents - ERROR - Calculator error: Failed to evaluate expression 'Sum the results of tasks 1, 2, 3, and the new task 5': Invalid characters found in expression: [',', 'S', 'a', 'd', 'e', 'f', 'h', 'k', 'l', 'm', 'n', 'o', 'r', 's', 't', 'u', 'w']
+Exception: (<class 'ValueError'>, ValueError("Invalid characters found in expression: [',', 'S', 'a', 'd', 'e', 'f', 'h', 'k', 'l', 'm', 'n', 'o', 'r', 's', 't', 'u', 'w']"), <traceback object at 0x000001FD0681D7C0>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 42, in calculator
+    raise ValueError(error_msg)
+ValueError: Invalid characters found in expression: [',', 'S', 'a', 'd', 'e', 'f', 'h', 'k', 'l', 'm', 'n', 'o', 'r', 's', 't', 'u', 'w']
+2025-05-28 09:27:02 - agents - ERROR - Error during execution of task 6 (tool: calculator): Invalid characters found in expression: [',', 'S', 'a', 'd', 'e', 'f', 'h', 'k', 'l', 'm', 'n', 'o', 'r', 's', 't', 'u', 'w']
+Exception: (<class 'ValueError'>, ValueError("Invalid characters found in expression: [',', 'S', 'a', 'd', 'e', 'f', 'h', 'k', 'l', 'm', 'n', 'o', 'r', 's', 't', 'u', 'w']"), <traceback object at 0x000001FD0681EA80>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 98, in execute_task
+    result = self.tools[tool_name](description)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\_api\deprecation.py", line 191, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\base.py", line 896, in __call__
+    return self.run(tool_input, callbacks=callbacks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\base.py", line 774, in run
+    raise error_to_raise
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\base.py", line 743, in run
+    response = context.run(self._run, *tool_args, **tool_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\structured.py", line 93, in _run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 42, in calculator
+    raise ValueError(error_msg)
+ValueError: Invalid characters found in expression: [',', 'S', 'a', 'd', 'e', 'f', 'h', 'k', 'l', 'm', 'n', 'o', 'r', 's', 't', 'u', 'w']
+2025-05-28 09:27:04 - agents - ERROR - Calculator error: Invalid characters found in expression: ['C', 'a', 'c', 'e', 'l', 't', 'u'] in expression 'Calculate 5 + 4444'
+Exception: None
+2025-05-28 09:27:04 - agents - ERROR - Calculator error: Failed to evaluate expression 'Calculate 5 + 4444': Invalid characters found in expression: ['C', 'a', 'c', 'e', 'l', 't', 'u']
+Exception: (<class 'ValueError'>, ValueError("Invalid characters found in expression: ['C', 'a', 'c', 'e', 'l', 't', 'u']"), <traceback object at 0x000001FD06829A00>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 42, in calculator
+    raise ValueError(error_msg)
+ValueError: Invalid characters found in expression: ['C', 'a', 'c', 'e', 'l', 't', 'u']
+2025-05-28 09:27:04 - agents - ERROR - Error during execution of task 5 (tool: calculator): Invalid characters found in expression: ['C', 'a', 'c', 'e', 'l', 't', 'u']
+Exception: (<class 'ValueError'>, ValueError("Invalid characters found in expression: ['C', 'a', 'c', 'e', 'l', 't', 'u']"), <traceback object at 0x000001FD06828C00>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 98, in execute_task
+    result = self.tools[tool_name](description)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\_api\deprecation.py", line 191, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\base.py", line 896, in __call__
+    return self.run(tool_input, callbacks=callbacks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\base.py", line 774, in run
+    raise error_to_raise
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\base.py", line 743, in run
+    response = context.run(self._run, *tool_args, **tool_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\structured.py", line 93, in _run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 42, in calculator
+    raise ValueError(error_msg)
+ValueError: Invalid characters found in expression: ['C', 'a', 'c', 'e', 'l', 't', 'u']
+2025-05-28 09:27:04 - agents - ERROR - Calculator error: Invalid characters found in expression: [',', 'S', 'a', 'd', 'e', 'f', 'h', 'k', 'l', 'm', 'n', 'o', 'r', 's', 't', 'u', 'w'] in expression 'Sum the results of tasks 1, 2, 3, and the new task 5'
+Exception: None
+2025-05-28 09:27:04 - agents - ERROR - Calculator error: Failed to evaluate expression 'Sum the results of tasks 1, 2, 3, and the new task 5': Invalid characters found in expression: [',', 'S', 'a', 'd', 'e', 'f', 'h', 'k', 'l', 'm', 'n', 'o', 'r', 's', 't', 'u', 'w']
+Exception: (<class 'ValueError'>, ValueError("Invalid characters found in expression: [',', 'S', 'a', 'd', 'e', 'f', 'h', 'k', 'l', 'm', 'n', 'o', 'r', 's', 't', 'u', 'w']"), <traceback object at 0x000001FD0682A1C0>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 42, in calculator
+    raise ValueError(error_msg)
+ValueError: Invalid characters found in expression: [',', 'S', 'a', 'd', 'e', 'f', 'h', 'k', 'l', 'm', 'n', 'o', 'r', 's', 't', 'u', 'w']
+2025-05-28 09:27:04 - agents - ERROR - Error during execution of task 6 (tool: calculator): Invalid characters found in expression: [',', 'S', 'a', 'd', 'e', 'f', 'h', 'k', 'l', 'm', 'n', 'o', 'r', 's', 't', 'u', 'w']
+Exception: (<class 'ValueError'>, ValueError("Invalid characters found in expression: [',', 'S', 'a', 'd', 'e', 'f', 'h', 'k', 'l', 'm', 'n', 'o', 'r', 's', 't', 'u', 'w']"), <traceback object at 0x000001FD06829F80>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 98, in execute_task
+    result = self.tools[tool_name](description)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\_api\deprecation.py", line 191, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\base.py", line 896, in __call__
+    return self.run(tool_input, callbacks=callbacks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\base.py", line 774, in run
+    raise error_to_raise
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\base.py", line 743, in run
+    response = context.run(self._run, *tool_args, **tool_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\structured.py", line 93, in _run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 42, in calculator
+    raise ValueError(error_msg)
+ValueError: Invalid characters found in expression: [',', 'S', 'a', 'd', 'e', 'f', 'h', 'k', 'l', 'm', 'n', 'o', 'r', 's', 't', 'u', 'w']
+2025-05-28 09:27:07 - agents - ERROR - Calculator error: Invalid characters found in expression: ['C', 'a', 'c', 'e', 'l', 't', 'u'] in expression 'Calculate 5 + 4444'
+Exception: None
+2025-05-28 09:27:07 - agents - ERROR - Calculator error: Failed to evaluate expression 'Calculate 5 + 4444': Invalid characters found in expression: ['C', 'a', 'c', 'e', 'l', 't', 'u']
+Exception: (<class 'ValueError'>, ValueError("Invalid characters found in expression: ['C', 'a', 'c', 'e', 'l', 't', 'u']"), <traceback object at 0x000001FD06813900>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 42, in calculator
+    raise ValueError(error_msg)
+ValueError: Invalid characters found in expression: ['C', 'a', 'c', 'e', 'l', 't', 'u']
+2025-05-28 09:27:07 - agents - ERROR - Error during execution of task 5 (tool: calculator): Invalid characters found in expression: ['C', 'a', 'c', 'e', 'l', 't', 'u']
+Exception: (<class 'ValueError'>, ValueError("Invalid characters found in expression: ['C', 'a', 'c', 'e', 'l', 't', 'u']"), <traceback object at 0x000001FD06813BC0>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 98, in execute_task
+    result = self.tools[tool_name](description)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\_api\deprecation.py", line 191, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\base.py", line 896, in __call__
+    return self.run(tool_input, callbacks=callbacks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\base.py", line 774, in run
+    raise error_to_raise
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\base.py", line 743, in run
+    response = context.run(self._run, *tool_args, **tool_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\structured.py", line 93, in _run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 42, in calculator
+    raise ValueError(error_msg)
+ValueError: Invalid characters found in expression: ['C', 'a', 'c', 'e', 'l', 't', 'u']
+2025-05-28 09:27:07 - agents - ERROR - Calculator error: Invalid characters found in expression: [',', 'S', 'a', 'd', 'e', 'f', 'h', 'k', 'l', 'm', 'n', 'o', 'r', 's', 't', 'u', 'w'] in expression 'Sum the results of tasks 1, 2, 3, and the new task 5'
+Exception: None
+2025-05-28 09:27:07 - agents - ERROR - Calculator error: Failed to evaluate expression 'Sum the results of tasks 1, 2, 3, and the new task 5': Invalid characters found in expression: [',', 'S', 'a', 'd', 'e', 'f', 'h', 'k', 'l', 'm', 'n', 'o', 'r', 's', 't', 'u', 'w']
+Exception: (<class 'ValueError'>, ValueError("Invalid characters found in expression: [',', 'S', 'a', 'd', 'e', 'f', 'h', 'k', 'l', 'm', 'n', 'o', 'r', 's', 't', 'u', 'w']"), <traceback object at 0x000001FD0681CFC0>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 42, in calculator
+    raise ValueError(error_msg)
+ValueError: Invalid characters found in expression: [',', 'S', 'a', 'd', 'e', 'f', 'h', 'k', 'l', 'm', 'n', 'o', 'r', 's', 't', 'u', 'w']
+2025-05-28 09:27:07 - agents - ERROR - Error during execution of task 6 (tool: calculator): Invalid characters found in expression: [',', 'S', 'a', 'd', 'e', 'f', 'h', 'k', 'l', 'm', 'n', 'o', 'r', 's', 't', 'u', 'w']
+Exception: (<class 'ValueError'>, ValueError("Invalid characters found in expression: [',', 'S', 'a', 'd', 'e', 'f', 'h', 'k', 'l', 'm', 'n', 'o', 'r', 's', 't', 'u', 'w']"), <traceback object at 0x000001FD0681D940>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 98, in execute_task
+    result = self.tools[tool_name](description)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\_api\deprecation.py", line 191, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\base.py", line 896, in __call__
+    return self.run(tool_input, callbacks=callbacks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\base.py", line 774, in run
+    raise error_to_raise
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\base.py", line 743, in run
+    response = context.run(self._run, *tool_args, **tool_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\structured.py", line 93, in _run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 42, in calculator
+    raise ValueError(error_msg)
+ValueError: Invalid characters found in expression: [',', 'S', 'a', 'd', 'e', 'f', 'h', 'k', 'l', 'm', 'n', 'o', 'r', 's', 't', 'u', 'w']
+2025-05-28 09:27:09 - agents - ERROR - Calculator error: Invalid characters found in expression: ['C', 'a', 'c', 'e', 'l', 't', 'u'] in expression 'Calculate 5 + 4444'
+Exception: None
+2025-05-28 09:27:09 - agents - ERROR - Calculator error: Failed to evaluate expression 'Calculate 5 + 4444': Invalid characters found in expression: ['C', 'a', 'c', 'e', 'l', 't', 'u']
+Exception: (<class 'ValueError'>, ValueError("Invalid characters found in expression: ['C', 'a', 'c', 'e', 'l', 't', 'u']"), <traceback object at 0x000001FD06828740>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 42, in calculator
+    raise ValueError(error_msg)
+ValueError: Invalid characters found in expression: ['C', 'a', 'c', 'e', 'l', 't', 'u']
+2025-05-28 09:27:09 - agents - ERROR - Error during execution of task 5 (tool: calculator): Invalid characters found in expression: ['C', 'a', 'c', 'e', 'l', 't', 'u']
+Exception: (<class 'ValueError'>, ValueError("Invalid characters found in expression: ['C', 'a', 'c', 'e', 'l', 't', 'u']"), <traceback object at 0x000001FD06829A80>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 98, in execute_task
+    result = self.tools[tool_name](description)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\_api\deprecation.py", line 191, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\base.py", line 896, in __call__
+    return self.run(tool_input, callbacks=callbacks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\base.py", line 774, in run
+    raise error_to_raise
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\base.py", line 743, in run
+    response = context.run(self._run, *tool_args, **tool_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\structured.py", line 93, in _run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 42, in calculator
+    raise ValueError(error_msg)
+ValueError: Invalid characters found in expression: ['C', 'a', 'c', 'e', 'l', 't', 'u']
+2025-05-28 09:27:09 - agents - ERROR - Calculator error: Invalid characters found in expression: [',', 'S', 'a', 'd', 'e', 'f', 'h', 'k', 'l', 'm', 'n', 'o', 'r', 's', 't', 'u', 'w'] in expression 'Sum the results of tasks 1, 2, 3, and the new task 5'
+Exception: None
+2025-05-28 09:27:09 - agents - ERROR - Calculator error: Failed to evaluate expression 'Sum the results of tasks 1, 2, 3, and the new task 5': Invalid characters found in expression: [',', 'S', 'a', 'd', 'e', 'f', 'h', 'k', 'l', 'm', 'n', 'o', 'r', 's', 't', 'u', 'w']
+Exception: (<class 'ValueError'>, ValueError("Invalid characters found in expression: [',', 'S', 'a', 'd', 'e', 'f', 'h', 'k', 'l', 'm', 'n', 'o', 'r', 's', 't', 'u', 'w']"), <traceback object at 0x000001FD0682AE40>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 42, in calculator
+    raise ValueError(error_msg)
+ValueError: Invalid characters found in expression: [',', 'S', 'a', 'd', 'e', 'f', 'h', 'k', 'l', 'm', 'n', 'o', 'r', 's', 't', 'u', 'w']
+2025-05-28 09:27:09 - agents - ERROR - Error during execution of task 6 (tool: calculator): Invalid characters found in expression: [',', 'S', 'a', 'd', 'e', 'f', 'h', 'k', 'l', 'm', 'n', 'o', 'r', 's', 't', 'u', 'w']
+Exception: (<class 'ValueError'>, ValueError("Invalid characters found in expression: [',', 'S', 'a', 'd', 'e', 'f', 'h', 'k', 'l', 'm', 'n', 'o', 'r', 's', 't', 'u', 'w']"), <traceback object at 0x000001FD06828EC0>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 98, in execute_task
+    result = self.tools[tool_name](description)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\_api\deprecation.py", line 191, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\base.py", line 896, in __call__
+    return self.run(tool_input, callbacks=callbacks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\base.py", line 774, in run
+    raise error_to_raise
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\base.py", line 743, in run
+    response = context.run(self._run, *tool_args, **tool_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\structured.py", line 93, in _run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 42, in calculator
+    raise ValueError(error_msg)
+ValueError: Invalid characters found in expression: [',', 'S', 'a', 'd', 'e', 'f', 'h', 'k', 'l', 'm', 'n', 'o', 'r', 's', 't', 'u', 'w']
+2025-05-28 09:27:12 - agents - ERROR - Calculator error: Invalid characters found in expression: ['C', 'a', 'c', 'e', 'l', 't', 'u'] in expression 'Calculate 5 + 4444'
+Exception: None
+2025-05-28 09:27:12 - agents - ERROR - Calculator error: Failed to evaluate expression 'Calculate 5 + 4444': Invalid characters found in expression: ['C', 'a', 'c', 'e', 'l', 't', 'u']
+Exception: (<class 'ValueError'>, ValueError("Invalid characters found in expression: ['C', 'a', 'c', 'e', 'l', 't', 'u']"), <traceback object at 0x000001FD06813880>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 42, in calculator
+    raise ValueError(error_msg)
+ValueError: Invalid characters found in expression: ['C', 'a', 'c', 'e', 'l', 't', 'u']
+2025-05-28 09:27:12 - agents - ERROR - Error during execution of task 5 (tool: calculator): Invalid characters found in expression: ['C', 'a', 'c', 'e', 'l', 't', 'u']
+Exception: (<class 'ValueError'>, ValueError("Invalid characters found in expression: ['C', 'a', 'c', 'e', 'l', 't', 'u']"), <traceback object at 0x000001FD0681C980>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 98, in execute_task
+    result = self.tools[tool_name](description)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\_api\deprecation.py", line 191, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\base.py", line 896, in __call__
+    return self.run(tool_input, callbacks=callbacks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\base.py", line 774, in run
+    raise error_to_raise
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\base.py", line 743, in run
+    response = context.run(self._run, *tool_args, **tool_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\structured.py", line 93, in _run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 42, in calculator
+    raise ValueError(error_msg)
+ValueError: Invalid characters found in expression: ['C', 'a', 'c', 'e', 'l', 't', 'u']
+2025-05-28 09:27:12 - agents - ERROR - Calculator error: Invalid characters found in expression: [',', 'S', 'a', 'd', 'e', 'f', 'h', 'k', 'l', 'm', 'n', 'o', 'r', 's', 't', 'u', 'w'] in expression 'Sum the results of tasks 1, 2, 3, and the new task 5'
+Exception: None
+2025-05-28 09:27:12 - agents - ERROR - Calculator error: Failed to evaluate expression 'Sum the results of tasks 1, 2, 3, and the new task 5': Invalid characters found in expression: [',', 'S', 'a', 'd', 'e', 'f', 'h', 'k', 'l', 'm', 'n', 'o', 'r', 's', 't', 'u', 'w']
+Exception: (<class 'ValueError'>, ValueError("Invalid characters found in expression: [',', 'S', 'a', 'd', 'e', 'f', 'h', 'k', 'l', 'm', 'n', 'o', 'r', 's', 't', 'u', 'w']"), <traceback object at 0x000001FD067F55C0>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 42, in calculator
+    raise ValueError(error_msg)
+ValueError: Invalid characters found in expression: [',', 'S', 'a', 'd', 'e', 'f', 'h', 'k', 'l', 'm', 'n', 'o', 'r', 's', 't', 'u', 'w']
+2025-05-28 09:27:12 - agents - ERROR - Error during execution of task 6 (tool: calculator): Invalid characters found in expression: [',', 'S', 'a', 'd', 'e', 'f', 'h', 'k', 'l', 'm', 'n', 'o', 'r', 's', 't', 'u', 'w']
+Exception: (<class 'ValueError'>, ValueError("Invalid characters found in expression: [',', 'S', 'a', 'd', 'e', 'f', 'h', 'k', 'l', 'm', 'n', 'o', 'r', 's', 't', 'u', 'w']"), <traceback object at 0x000001FD068112C0>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 98, in execute_task
+    result = self.tools[tool_name](description)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\_api\deprecation.py", line 191, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\base.py", line 896, in __call__
+    return self.run(tool_input, callbacks=callbacks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\base.py", line 774, in run
+    raise error_to_raise
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\base.py", line 743, in run
+    response = context.run(self._run, *tool_args, **tool_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langchain_core\tools\structured.py", line 93, in _run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\agents\tool_agent.py", line 42, in calculator
+    raise ValueError(error_msg)
+ValueError: Invalid characters found in expression: [',', 'S', 'a', 'd', 'e', 'f', 'h', 'k', 'l', 'm', 'n', 'o', 'r', 's', 't', 'u', 'w']
+2025-05-28 09:27:14 - workflow - ERROR - Unexpected error during workflow run: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+Exception: (<class 'langgraph.errors.GraphRecursionError'>, GraphRecursionError('Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.\nFor troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT'), <traceback object at 0x000001FD065E87C0>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\workflow\main_workflow.py", line 269, in run_workflow
+    final_state = workflow_graph.invoke(initial_state)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langgraph\pregel\__init__.py", line 2894, in invoke
+    for chunk in self.stream(
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langgraph\pregel\__init__.py", line 2547, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2025-05-28 09:30:27 - workflow - ERROR - Unexpected error during workflow run: cannot import name 'set_recursion_limit' from 'langgraph.pregel' (C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langgraph\pregel\__init__.py)
+Exception: (<class 'ImportError'>, ImportError("cannot import name 'set_recursion_limit' from 'langgraph.pregel' (C:\\Users\\amanm\\OneDrive\\Documents\\code\\py\\assignment\\ass1\\venv\\Lib\\site-packages\\langgraph\\pregel\\__init__.py)"), <traceback object at 0x0000018FCC887380>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\workflow\main_workflow.py", line 285, in run_workflow
+    from langgraph.pregel import set_recursion_limit
+ImportError: cannot import name 'set_recursion_limit' from 'langgraph.pregel' (C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langgraph\pregel\__init__.py)
+2025-05-28 09:30:39 - workflow - ERROR - Unexpected error during workflow run: cannot import name 'set_recursion_limit' from 'langgraph.pregel' (C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langgraph\pregel\__init__.py)
+Exception: (<class 'ImportError'>, ImportError("cannot import name 'set_recursion_limit' from 'langgraph.pregel' (C:\\Users\\amanm\\OneDrive\\Documents\\code\\py\\assignment\\ass1\\venv\\Lib\\site-packages\\langgraph\\pregel\\__init__.py)"), <traceback object at 0x0000018FCC880E40>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\workflow\main_workflow.py", line 285, in run_workflow
+    from langgraph.pregel import set_recursion_limit
+ImportError: cannot import name 'set_recursion_limit' from 'langgraph.pregel' (C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\venv\Lib\site-packages\langgraph\pregel\__init__.py)
+2025-05-28 09:31:30 - workflow - ERROR - Unexpected error during workflow run: 'NoneType' object does not support item assignment
+Exception: (<class 'TypeError'>, TypeError("'NoneType' object does not support item assignment"), <traceback object at 0x000002238F778A40>)
+Traceback (most recent call last):
+  File "C:\Users\amanm\OneDrive\Documents\code\py\assignment\ass1\agentic-workflow\workflow\main_workflow.py", line 285, in run_workflow
+    workflow_graph.config["recursion_limit"] = 50  # Double the default limit
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object does not support item assignment
